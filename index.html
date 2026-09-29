@@ -4,6 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Win With Nabs</title>
+<link rel="icon" href="WWN_logo.JPG" type="image/jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,20 +16,28 @@
   <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
+    <li><a href="about.html">About Nabs</a></li>
     <li><a href="sponsorships.html">Sponsorships</a></li>
+    <li><a href="guests.html">Guests</a></li>
     <li><a href="consulting.html">Consulting</a></li>
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
-  <a href="index.html" class="nav-logo">WWN</a>
+  <a href="index.html" class="nav-logo">
+    <img src="WWN_logo.JPG" alt="Win With Nabs Logo" />
+  </a>
 </nav>
 
 <header class="hero">
-  <!-- Hero background video pending from client (PRD Sec. 9); placeholder shown until then -->
-  <div class="hero-media-placeholder" role="img" aria-label="Placeholder for looping Win With Nabs video clips"></div>
+  <!-- Hero background video pending from client (PRD Sec. 9); rotating clip stills used as interim background -->
+  <div class="hero-media" role="img" aria-label="Rotating Win With Nabs podcast clips">
+    <img src="Content_WWN.webp" alt="" class="hero-slide" />
+    <img src="Asher_clip.webp" alt="" class="hero-slide" />
+    <img src="Losing.webp" alt="" class="hero-slide" />
+    <img src="mqdefault_6s (1).webp" alt="" class="hero-slide" />
+    <div class="hero-media-overlay"></div>
+  </div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Podcast &middot; Business &amp; Tech</p>
-    <h1>Win With Nabs</h1>
+    <h1><a href="https://www.youtube.com/@WinWNabs/featured" target="_blank" rel="noopener" class="hero-title-link">Win With Nabs</a></h1>
     <p class="hero-tagline">
       Conversations with the founders, operators, and creators shaping business
       and tech &mdash; from the team behind Grove Podcast Studios in Miami.
@@ -38,60 +50,60 @@
   </button>
 </header>
 
-<section id="story">
-  <div class="container split">
-    <div class="split-text">
-      <p class="eyebrow">Our Story</p>
-      <h2>The Win With Nabs Story</h2>
-      <!-- Copied from content.js storyText — update both places if this changes -->
-      <p>
-        Win With Nabs started as a combat sports interview show recorded at Grove
-        Podcast Studios in Miami, and has since pivoted toward business and tech
-        conversations with founders, operators, and creators. [Full story copy pending from client.]
-      </p>
-    </div>
-    <div class="split-media">
-      <div class="placeholder-box" role="img" aria-label="Placeholder for Win With Nabs story image">
-        Story image pending from client
+<main>
+  <section id="story">
+    <div class="container split">
+      <div class="split-text">
+        <p class="eyebrow">Learn</p>
+        <h2>The Win With Nabs Story</h2>
+        <!-- Copied from content.js storyText — update both places if this changes -->
+        <p>
+          Win With Nabs started as a combat sports interview show recorded at Grove
+          Podcast Studios in Miami, and has since pivoted toward business and tech
+          conversations with founders, operators, and creators. [Full story copy pending from client.]
+        </p>
+      </div>
+      <div class="split-media">
+        <img src="Nabs_story.PNG" alt="Nabs recording the Win With Nabs podcast" class="story-image" />
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="credentials" class="section-alt">
-  <div class="container split reverse">
-    <div class="split-text">
-      <p class="eyebrow">Track Record</p>
-      <h2>Nabs&rsquo; Credentials</h2>
-      <!-- Values below are copied from content.js — update both places if these change -->
-      <div class="stats-row">
-        <div class="stat">
-          <span class="stat-value">[SUBSCRIBER_COUNT]</span>
-          <span class="stat-label">Subscribers</span>
+  <section id="credentials" class="section-alt">
+    <div class="container split reverse">
+      <div class="split-text">
+        <p class="eyebrow">Track Record</p>
+        <h2>Nabs&rsquo; Credentials</h2>
+        <!-- Values below are copied from content.js — update both places if these change -->
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-value">500K+</span>
+            <span class="stat-label">Subscribers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2.6M+</span>
+            <span class="stat-label">Lifetime Views</span>
+          </div>
         </div>
-        <div class="stat">
-          <span class="stat-value">2M+</span>
-          <span class="stat-label">Lifetime Views</span>
+        <p>Featured guests include:</p>
+        <ul class="guest-list">
+          <li><a href="https://www.youtube.com/watch?v=FTucsCOQxkI" target="_blank" rel="noopener">Dana White - CEO & President, UFC</a></li>
+          <li><a href="https://www.youtube.com/watch?v=g6CJSnWDJ6E" target="_blank" rel="noopener">Asher Genoot - CEO, Hut8</a></li>
+          <li><a href="https://www.youtube.com/watch?v=1FMTbM9Bgzk" target="_blank" rel="noopener">Audie Attar - Founder, Paradigm Sports Management</a></li>
+        </ul>
+        <p>Past sponsors:</p>
+        <!-- Logos copied from content.js pastSponsors — update both places if these change -->
+        <div class="sponsor-logos">
+          <img src="KC_logo.png" alt="Karate Combat logo" />
+          <img src="Pincho_logo.png" alt="Pincho logo" />
         </div>
       </div>
-      <p>Featured guests include:</p>
-      <ul class="guest-list">
-        <li>Dana White</li>
-        <li>Asher Genoot</li>
-        <li>Audie Attar</li>
-      </ul>
-      <div class="sponsor-badge">
-        <span>Past Sponsor:</span>
-        <strong>Karate Combat</strong>
+      <div class="split-media">
+        <img src="Nabs_Play.png" alt="Nabs on the Win With Nabs set" class="story-image" />
       </div>
     </div>
-    <div class="split-media">
-      <div class="placeholder-box small" role="img" aria-label="Placeholder for credentials image">
-        Supporting image pending from client
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="container">

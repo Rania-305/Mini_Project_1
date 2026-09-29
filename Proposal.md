@@ -2,7 +2,7 @@
 
 **Client:** Nabeel "Nabs" Ishoof, host of Win With Nabs, a podcast/YouTube (my younger brother)
 channel recorded at Grove Podcast Studios in Miami. Originally a combat sports
-interview show, now pivoting toward business and tech. Past guests include
+interview show, he's now pivoting toward business and tech. Past guests include
 Dana White, Asher Genoot, and Audie Attar.
 
 **Purpose:** A professional business site that shows what Nabs offers
@@ -36,21 +36,17 @@ requests are secondary actions.
   clips for the hero section, headshot and studio photos, guest photos he's
   allowed to use, updated bio for the business/tech pivot, booking link for
   consulting calls (e.g. Calendly), OK to use the Karate Combat logo
-- Deliberately excluded: detailed audience stats (his call)
+- Deliberately excluded: detailed audience stats (his preference)
 
 **Style preferences:** Between sleek corporate and gritty fight poster:
-professional, but with edge. Colors matched to his existing logo. He
-specifically doesn't want a generic, template-looking "AI-made" site.
+professional, but with edge. Colors matched to his existing logo. He specifically doesn't want a generic, "Claude AI slop" site.
 
 **Inspiration sites:**
-- Grove Podcast Studios (grovepodcast.com), liked. It leads with what the
-  business actually sells, and every service has a direct "Book Now" action.
-  He wants his site oriented the same way: around his offers, not "contact
-  me if interested."
+- Grove Podcast Studios (grovepodcast.com), liked. It leads with what the business actually sells, and every service has a direct "Book Now" action.
+  He wants his site oriented the same way: around his offers, not just a "contact me if interested."
 - Creator Science sponsor page (creatorscience.com/sponsor), didn't love it.
   Too plain; he wants his site to look cooler.
-- The Casuals MMA (casualsmma.com), didn't love it. Same feedback: not
-  visually strong enough.
+- The Casuals MMA (casualsmma.com), didn't love it. Same feedback: not visually strong enough.
 
 ## Layout Plan
 

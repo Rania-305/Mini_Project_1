@@ -17,15 +17,15 @@ window.SITE_CONTENT = {
   },
 
   featuredGuests: [
-    { name: "Dana White", photo: null },
-    { name: "Asher Genoot", photo: null },
-    { name: "Audie Attar", photo: null }
+    { name: "Dana White", photo: "Dana_guest.png" },
+    { name: "Asher Genoot", photo: "Asher_guest.png" },
+    { name: "Audie Attar", photo: "Audie_Guest.png" }
   ],
 
-  pastSponsor: {
-    name: "Karate Combat",
-    logoUrl: null // usage rights + logo file pending client confirmation (PRD Sec. 9)
-  },
+  pastSponsors: [
+    { name: "Karate Combat", logoUrl: "KC_logo.png" },
+    { name: "Pincho", logoUrl: "Pincho_logo.png" }
+  ],
 
   bio: "[BIO PENDING FROM CLIENT — updated bio reflecting the show's pivot toward business and tech.]",
 
