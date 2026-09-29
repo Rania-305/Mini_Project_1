@@ -46,7 +46,15 @@ h3 { font-size: 1.25rem; }
 
 p { color: var(--text-muted); }
 
-a { color: var(--accent-text); }
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
 
 img { max-width: 100%; display: block; }
 
