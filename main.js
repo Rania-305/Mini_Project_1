@@ -3,11 +3,12 @@
  * placeholder handling, and form submission handling. Page content (stats,
  * bios, guest lists, etc.) is authored directly as static HTML per page —
  * see content.js for the single reference copy the client should edit, and
- * copy those values into each page's markup by hand. No email-delivery
- * backend is wired up yet — PRD Section 13, Open Question 4 is still
- * unresolved, so forms are intercepted client-side and show a "not yet
- * connected" status instead of silently failing or POSTing to a guessed
- * endpoint.
+ * copy those values into each page's markup by hand. Forms POST to Formspree
+ * (PRD Section 13, Open Question 4 — GitHub Pages has no server, so a static-
+ * site-friendly form backend is used instead of a custom backend). Formspree
+ * validates required fields server-side and forwards submissions to the
+ * email configured on the form (see each form's data-contact-email and
+ * action attributes in HTML).
  */
 (function () {
   document.addEventListener("DOMContentLoaded", () => {
@@ -72,16 +73,38 @@
       return;
     }
 
-    // No email-delivery backend is configured yet (PRD Sec. 13, Open Question 4).
-    // Surface that clearly instead of pretending the message was sent.
-    const destination = form.getAttribute("data-contact-email") || "the site owner";
-    showStatus(
-      statusEl,
-      "error",
-      "This form isn't connected to an email backend yet. Submissions will be delivered to " +
-        destination +
-        " once that's set up."
-    );
+    // Placeholder endpoint — swap in the real Formspree form ID once created.
+    if (form.action.includes("FORMSPREE_FORM_ID")) {
+      showStatus(
+        statusEl,
+        "error",
+        "This form isn't connected to a real Formspree endpoint yet. Replace FORMSPREE_FORM_ID in the HTML once a form is created at formspree.io."
+      );
+      return;
+    }
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    })
+      .then((response) => {
+        if (response.ok) {
+          form.reset();
+          showStatus(statusEl, "success", "Thanks — your message has been sent.");
+        } else {
+          showStatus(statusEl, "error", "Something went wrong sending your message. Please try again or email us directly.");
+        }
+      })
+      .catch(() => {
+        showStatus(statusEl, "error", "Something went wrong sending your message. Please try again or email us directly.");
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
+      });
   }
 
   function showStatus(el, type, message) {

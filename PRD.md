@@ -303,3 +303,12 @@ drive a booking, without listing prices.
 
 - Source proposal/client interview: [Proposal.md](Proposal.md)
 - Layout sketch: [Layout_Sketch.jpeg](Layout_Sketch.jpeg)
+
+
+## Later
+1. Hero background video (PRD 7.1, FR5, §8, §11) — spec requires a looping, muted, autoplay video with a poster/fallback image; site currently uses static rotating images instead.
+2. Consulting "Book a Call" CTA linking to an external scheduling tool (PRD 7.4, FR4) — consulting.html only links to the Contact page; no booking link or `data-booking-pending` wiring is used.
+3. Server-side form validation (PRD 7.3, 7.5, FR2, FR3) — forms are only validated client-side.
+4. Email delivery to `nabeelishoof@gmail.com` on form submit — no backend is wired up; main.js shows a "not yet connected" message instead of sending anything.
+5. On-page success confirmation after a valid form submission (PRD 7.3, 7.5) — not implemented since submissions aren't actually processed yet.
+6. CAPTCHA as a spam-mitigation option (PRD §11) — only the honeypot field is implemented, not a CAPTCHA.
